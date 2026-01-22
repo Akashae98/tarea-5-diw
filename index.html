@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5 DIW</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link" id="skip-main">Saltar al contenido principal</a>
+    <a href="#video-section" class="skip-link" id="skip-video">Saltar directamente al video</a>
+    <a href="#page-footer" class="skip-link" id="skip-footer">Saltar al pie de página</a>
+    <header>
+        <h1>Extracto de cortometraje de 1941 sobre la visión</h1>
+
+        <nav aria-label="Menú principal" role="navigation">
+            <ul class="nav-list">
+                <li><a href="#video-section">Video</a></li>
+                <li><a href="#descripcion">Descripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section aria-labelledby="video-titulo" id="video-section">
+            <h2 id="video-titulo">How the Eye Functions</h2>
+            <video controls poster="video/Portada_video.png" width="640" height="360">
+                <source src="video/video.mp4" type="video/mp4">
+                <!-- Pistas de subtítulos en formato VTT -->
+                <track src="video/subtitulos_en.vtt" kind="subtitles" srclang="en" label="English (VTT)" default>
+                <track src="video/subtitulos_es.vtt" kind="subtitles" srclang="es" label="Español (VTT)">
+
+                <!-- AUDIODESCRIPCIÓN incluida con kind="descriptions" para su lectura en navegadores especiales -->
+                <track src="video/audiodescripcion.vtt" kind="descriptions" srclang="es" label="Audiodescripción">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <div id="descripcion">
+                <p>Este es un extracto del cortrometraje How the Eye Functions,
+                    el video completo lo piedes encontrar como dominio público en
+                    <a href="https://archive.org/details/HowtheEy1941">archive.org</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="page-footer">
+        <p>&copy; 2026 - Carolina Vilar Rodenas</p>
+    </footer>
+</body>
+
+</html>
